@@ -15,7 +15,7 @@ numpy>=1.19.0
 huggingface_hub>=0.25.0
 transformers>=4.48.0
 
-#
+# was-node-suite-comfyui
 cmake
 fairscale>=0.4.4
 git+https://github.com/WASasquatch/img2texture.git
@@ -31,3 +31,10 @@ rembg
 scikit-image>=0.20.0
 scikit-learn
 timm>=0.4.12
+
+
+
+# ComfyUI-easycontrol
+easydict
+requests
+
