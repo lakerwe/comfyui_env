@@ -1,13 +1,16 @@
 # image to image
 gguf>=0.13.0
-protobuf
+protobuf>=4.25.3
 
 # matting
-diffusers
+diffusers>=0.32.2
 accelerate
 clip_interrogator>=0.6.0
 lark
 onnxruntime
 opencv-python
 matplotlib
-peft
+peft>=0.14.0
+numpy>=1.19.0
+huggingface_hub>=0.25.0
+transformers>=4.48.0
