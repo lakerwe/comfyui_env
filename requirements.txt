@@ -1,0 +1,13 @@
+# image to image
+gguf>=0.13.0
+protobuf
+
+# matting
+diffusers
+accelerate
+clip_interrogator>=0.6.0
+lark
+onnxruntime
+opencv-python
+matplotlib
+peft
