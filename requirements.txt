@@ -58,6 +58,10 @@ pymatting
 blend_modes
 loguru
 
+# ComfyUI-Impact-Pack
+segment-anything
+piexif
+dill
 
 
 
