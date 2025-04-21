@@ -44,7 +44,7 @@ mss
 
 # ComfyUI_essentials
 colour-science
-git+https://github.com/pixeloe-ai/pixeloe.git#egg=pixeloe
+pixeloe
 transparent-background
                         
 
