@@ -44,9 +44,9 @@ mss
 
 # ComfyUI_essentials
 colour-science
-pixeloe
+pixeloe==0.1.4
 transparent-background
-
+                        
 
 # ComfyUI_SLK_joy_caption_two
 bitsandbytes>=0.44.1
