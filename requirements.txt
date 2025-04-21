@@ -63,7 +63,16 @@ segment-anything
 piexif
 dill
 
-
+#Bjornulf_custom_nodes
+ollama
+pydub
+ffmpeg-python
+civitai-py
+fal_client
+sounddevice
+langdetect
+spacy
+textblob
 
 
 # comfyui
