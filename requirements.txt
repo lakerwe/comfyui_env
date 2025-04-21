@@ -42,4 +42,11 @@ requests
 color-matcher
 mss
 
+# ComfyUI_essentials
+colour-science
+pixeloe
+transparent-background
 
+
+# ComfyUI_SLK_joy_caption_two
+bitsandbytes>=0.44.1
