@@ -64,6 +64,7 @@ piexif
 dill
 
 #Bjornulf_custom_nodes
+openai
 ollama
 pydub
 ffmpeg-python
