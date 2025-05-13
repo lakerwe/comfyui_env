@@ -45,8 +45,16 @@ RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/chflame163/Comf
 RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/justUmen/Bjornulf_custom_nodes.git      
 RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git        
 
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/mit-han-lab/ComfyUI-nunchaku nunchaku_nodes
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/Fannovel16/comfyui_controlnet_aux/
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/kijai/ComfyUI-FramePackWrapper.git
+
+
 RUN git clone https://github.com/lakerwe/comfyui_env.git
 RUN pip3 install -r /app/comfyui_env/requirements.txt
+RUN pip3 install https://huggingface.co/mit-han-lab/nunchaku/resolve/main/nunchaku-0.2.0+torch2.7-cp310-cp310-linux_x86_64.whl
 
 EXPOSE 8848
 CMD ["python3", "-u", "/app/ComfyUI/main.py", "--listen", "0.0.0.0", "--port", "8848"]
