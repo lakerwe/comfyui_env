@@ -52,6 +52,14 @@ RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/Kosinkadink/Com
 RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/kijai/ComfyUI-FramePackWrapper.git
 
 
+RUN mkdir -p /app/ComfyUI/custom_nodes && \
+    cd /app/ComfyUI/custom_nodes && \
+    git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack comfyui-impact-pack && \
+    git clone https://github.com/ltdrdata/ComfyUI-Impact-Subpack && \
+    git clone --recursive https://github.com/ssitu/ComfyUI_UltimateSDUpscale
+
+RUN pip install ultralytics
+
 RUN git clone https://github.com/lakerwe/comfyui_env.git
 RUN pip3 install -r /app/comfyui_env/requirements.txt
 RUN pip3 install https://huggingface.co/mit-han-lab/nunchaku/resolve/main/nunchaku-0.2.0+torch2.7-cp310-cp310-linux_x86_64.whl
