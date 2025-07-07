@@ -62,6 +62,7 @@ loguru
 segment-anything
 piexif
 dill
+git+https://github.com/facebookresearch/sam2
 
 #Bjornulf_custom_nodes
 openai
