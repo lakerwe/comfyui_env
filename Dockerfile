@@ -25,27 +25,29 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 # Python Evn
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/city96/ComfyUI-GGUF.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/yolain/ComfyUI-Easy-Use.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/WASasquatch/was-node-suite-comfyui.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/rgthree/rgthree-comfy.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/jax-explorer/ComfyUI-easycontrol.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/kijai/ComfyUI-KJNodes.git
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/city96/ComfyUI-GGUF.git && \
+    git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git && \
+    git clone https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git && \
+    git clone https://github.com/WASasquatch/was-node-suite-comfyui.git && \
+    git clone https://github.com/rgthree/rgthree-comfy.git && \
+    git clone https://github.com/jax-explorer/ComfyUI-easycontrol.git && \
+    git clone https://github.com/kijai/ComfyUI-KJNodes.git && \
+    git clone https://github.com/EvilBT/ComfyUI_SLK_joy_caption_two.git && \
+    git clone https://github.com/cubiq/ComfyUI_essentials.git && \
+    git clone https://github.com/kijai/ComfyUI-IC-Light.git && \
+    git clone https://github.com/huchenlei/ComfyUI-IC-Light-Native.git && \
+    git clone https://github.com/gseth/ControlAltAI-Nodes.git && \
+    git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git && \
+    git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git && \
+    git clone https://github.com/chflame163/ComfyUI_LayerStyle.git && \
+    git clone https://github.com/justUmen/Bjornulf_custom_nodes.git && \
+    git clone https://github.com/Fannovel16/comfyui_controlnet_aux/ && \
+    git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
 
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/EvilBT/ComfyUI_SLK_joy_caption_two.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/cubiq/ComfyUI_essentials.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/kijai/ComfyUI-IC-Light.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/huchenlei/ComfyUI-IC-Light-Native.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/gseth/ControlAltAI-Nodes.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/chflame163/ComfyUI_LayerStyle.git
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/justUmen/Bjornulf_custom_nodes.git
 
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/Fannovel16/comfyui_controlnet_aux/
-RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
+RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/yolain/ComfyUI-Easy-Use.git && \
+    cd ComfyUI-Easy-Use && \
+    git checkout 54614079ca96fa66c8953ff89dc66ca77245f5db
 
 RUN cd /app/ComfyUI/custom_nodes && \
     git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack comfyui-impact-pack && \
