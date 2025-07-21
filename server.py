@@ -315,6 +315,13 @@ class PromptServer():
 
                 split = os.path.splitext(filename)
 
+                if os.path.exists(filepath):
+                    try:
+                        os.remove(filepath)
+                        logging.info(f"Deleted existing image file: {filepath}")
+                    except Exception as e:
+                        logging.warning(f"Failed to delete existing image file {filepath}: {str(e)}")
+
                 if overwrite is not None and (overwrite == "true" or overwrite == "1"):
                     pass
                 else:
@@ -399,6 +406,13 @@ class PromptServer():
 
                     split = os.path.splitext(filename)
 
+                    if os.path.exists(filepath):
+                        try:
+                            os.remove(filepath)
+                            logging.info(f"Deleted existing file: {filepath}")
+                        except Exception as e:
+                            logging.warning(f"Failed to delete existing file {filepath}: {str(e)}")
+                    
                     if overwrite is not None and (overwrite == "true" or overwrite == "1"):
                         pass
                     else:
