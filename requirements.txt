@@ -149,5 +149,3 @@ insightface==0.7.3
 # opencv-python>=4.7.0.72
 # numpy==1.26.4
 # ultralytics
-
-cupy-cuda121
