@@ -7,7 +7,7 @@ protobuf>=4.25.3
 accelerate
 clip_interrogator>=0.6.0
 lark
-onnxruntime
+# onnxruntime
 opencv-python
 matplotlib
 # peft>=0.14.0
@@ -138,3 +138,16 @@ diffusers>=0.33.0
 peft>=0.15.0
 pyloudnorm
 gguf>=0.14.0
+
+
+# https://github.com/Gourieff/comfyui-reactor
+onnxruntime-gpu==1.17.3
+segment_anything
+insightface==0.7.3
+# albumentations>=1.4.16
+# onnx>=1.14.0
+# opencv-python>=4.7.0.72
+# numpy==1.26.4
+# ultralytics
+
+cupy-cuda121
