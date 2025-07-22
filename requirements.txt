@@ -141,7 +141,7 @@ gguf>=0.14.0
 
 
 # https://github.com/Gourieff/comfyui-reactor
-onnxruntime-gpu==1.17.3
+onnxruntime-gpu
 segment_anything
 insightface==0.7.3
 # albumentations>=1.4.16
