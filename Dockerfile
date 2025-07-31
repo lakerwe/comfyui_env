@@ -69,7 +69,8 @@ RUN cd /app/ComfyUI/custom_nodes && \
 
 RUN git clone https://github.com/lakerwe/comfyui_env.git && pip3 install -r /app/comfyui_env/requirements.txt
 RUN cp /app/comfyui_env/server.py /app/ComfyUI/server.py && \
-    cp /app/comfyui_env/nodes.py /app/ComfyUI/custom_nodes/ComfyUI-ReActor/nodes.py
+    cp /app/comfyui_env/nodes.py /app/ComfyUI/custom_nodes/ComfyUI-ReActor/nodes.py && \
+    cp /app/comfyui_env/nodes_video.py /app/ComfyUI/comfy_extras/nodes_video.py
 
 EXPOSE 8848
 CMD ["python3", "-u", "/app/ComfyUI/main.py", "--listen", "0.0.0.0", "--port", "8848"]
