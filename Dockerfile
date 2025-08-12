@@ -42,7 +42,9 @@ RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/city96/ComfyUI-
     git clone https://github.com/chflame163/ComfyUI_LayerStyle.git && \
     git clone https://github.com/justUmen/Bjornulf_custom_nodes.git && \
     git clone https://github.com/Fannovel16/comfyui_controlnet_aux/ && \
-    git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
+    git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git && \
+    git clone https://github.com/lldacing/ComfyUI_PuLID_Flux_ll.git && \
+    git clone https://github.com/ChenDarYen/ComfyUI-NAG.git
 
 
 RUN cd /app/ComfyUI/custom_nodes && git clone https://github.com/yolain/ComfyUI-Easy-Use.git && \

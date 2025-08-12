@@ -9,7 +9,7 @@ clip_interrogator>=0.6.0
 lark
 # onnxruntime
 opencv-python
-matplotlib
+matplotlib==3.10.3
 # peft>=0.14.0
 numpy>=1.19.0
 # huggingface_hub>=0.25.0
@@ -149,3 +149,16 @@ insightface==0.7.3
 # opencv-python>=4.7.0.72
 # numpy==1.26.4
 # ultralytics
+
+
+
+# https://github.com/lldacing/ComfyUI_PuLID_Flux_ll/tree/main
+cython
+facexlib
+#insightface
+#onnxruntime
+#onnxruntime-gpu; sys_platform != 'darwin' and (platform_machine == 'x86_64' or platform_machine == 'AMD64')
+# ftfy
+# timm
+
+
