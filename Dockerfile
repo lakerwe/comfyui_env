@@ -69,7 +69,9 @@ RUN cd /app/ComfyUI/custom_nodes && \
     git clone https://github.com/Gourieff/ComfyUI-ReActor.git && \
     cd ComfyUI-ReActor && git checkout 9b17e4cea53769d7157e507659adbbe09a3114fe
 
-RUN git clone https://github.com/lakerwe/comfyui_env.git && pip3 install -r /app/comfyui_env/requirements.txt
+RUN git clone https://github.com/lakerwe/comfyui_env.git && \
+    cd comfyui_env && git checkout snow && \
+    pip3 install -r /app/comfyui_env/requirements.txt
 RUN cp /app/comfyui_env/server.py /app/ComfyUI/server.py && \
     cp /app/comfyui_env/nodes.py /app/ComfyUI/custom_nodes/ComfyUI-ReActor/nodes.py
 
